@@ -1,0 +1,360 @@
+Date/Time:       2022-09-30 20:46:37 
+Command line:    C:\Users\cleme\AppData\Local\Programs\Python\Python310\Scripts\briefcase run android
+
+OS Release:      Windows 10
+OS Version:      10.0.19044
+Architecture:    AMD64
+Platform:        Windows-10-10.0.19044-SP0
+
+Python exe:      C:\Users\cleme\AppData\Local\Programs\Python\Python310\python.exe
+Python version:  3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)]
+Virtual env:     False
+Conda env:       False
+
+Briefcase:       0.3.9
+Target platform: android
+Target format:   gradle
+
+Environment Variables:
+    ALLUSERSPROFILE=C:\ProgramData
+    APPDATA=C:\Users\cleme\AppData\Roaming
+    COMMONPROGRAMFILES=C:\Program Files\Common Files
+    COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files
+    COMMONPROGRAMW6432=C:\Program Files\Common Files
+    COMPUTERNAME=DESKTOP-4RLDV1J
+    COMSPEC=C:\WINDOWS\system32\cmd.exe
+    DRIVERDATA=C:\Windows\System32\Drivers\DriverData
+    FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+    FPS_BROWSER_USER_PROFILE_STRING=Default
+    HOMEDRIVE=C:
+    HOMEPATH=\Users\cleme
+    LOCALAPPDATA=C:\Users\cleme\AppData\Local
+    LOGONSERVER=\\DESKTOP-4RLDV1J
+    NUMBER_OF_PROCESSORS=4
+    ONEDRIVE=C:\Users\cleme\OneDrive
+    ONEDRIVECONSUMER=C:\Users\cleme\OneDrive
+    OS=Windows_NT
+    PATH=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\cleme\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\cleme\AppData\Local\Programs\Python\Python310\;C:\Users\cleme\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.2.1\bin;
+    PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+    PROCESSOR_ARCHITECTURE=AMD64
+    PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+    PROCESSOR_LEVEL=6
+    PROCESSOR_REVISION=9e09
+    PROGRAMDATA=C:\ProgramData
+    PROGRAMFILES=C:\Program Files
+    PROGRAMFILES(X86)=C:\Program Files (x86)
+    PROGRAMW6432=C:\Program Files
+    PSMODULEPATH=C:\Users\cleme\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+    PUBLIC=C:\Users\Public
+    PYCHARM COMMUNITY EDITION=C:\Program Files\JetBrains\PyCharm Community Edition 2022.2.1\bin;
+    SESSIONNAME=Console
+    SYSTEMDRIVE=C:
+    SYSTEMROOT=C:\WINDOWS
+    TEMP=C:\Users\cleme\AppData\Local\Temp
+    TMP=C:\Users\cleme\AppData\Local\Temp
+    USERDOMAIN=DESKTOP-4RLDV1J
+    USERDOMAIN_ROAMINGPROFILE=DESKTOP-4RLDV1J
+    USERNAME=cleme
+    USERPROFILE=C:\Users\cleme
+    WINDIR=C:\WINDOWS
+    ZES_ENABLE_SYSMAN=1
+
+Briefcase Log:
+[20:46:23]                                                                                                                                                         subprocess.py:442
+           >>> Running Command:                                                                                                                                    subprocess.py:443
+           >>>     'C:\Users\cleme\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk\cmdline-tools\latest\bin\sdkmanager.bat' --list_installed               subprocess.py:444
+           >>> Working Directory:                                                                                                                                  subprocess.py:451
+           >>>     C:\Users\cleme\PycharmProjects\beeware-tutorial\Dec                                                                                             subprocess.py:452
+           >>> Environment Overrides:                                                                                                                              subprocess.py:461
+           >>>     ANDROID_SDK_ROOT=C:\Users\cleme\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk                                                         subprocess.py:463
+           >>>     JAVA_HOME=C:\Users\cleme\AppData\Local\BeeWare\briefcase\Cache\tools\java                                                                       subprocess.py:463
+[20:46:25] >>> Command Output:                                                                                                                                     subprocess.py:468
+           >>>     Loading package information...                                                                                                                  subprocess.py:470
+           >>>     Loading local repository...                                                                                                                     subprocess.py:470
+           >>>     [=========                              ] 25% Loading local repository...                                                                       subprocess.py:470
+           >>>     [=========                              ] 25% Fetch remote repository...                                                                        subprocess.py:470
+           >>>     [=======================================] 100% Fetch remote repository...                                                                       subprocess.py:470
+           >>>     Installed packages:                                                                                                                             subprocess.py:470
+           >>>       Path                                    | Version | Description                    | Location                                                 subprocess.py:470
+           >>>       -------                                 | ------- | -------                        | -------                                                  subprocess.py:470
+           >>>       build-tools;30.0.2                      | 30.0.2  | Android SDK Build-Tools 30.0.2 | build-tools\30.0.2                                       subprocess.py:470
+           >>>       emulator                                | 31.3.11 | Android Emulator               | emulator                                                 subprocess.py:470
+           >>>       patcher;v4                              | 1       | SDK Patch Applier v4           | patcher\v4                                               subprocess.py:470
+           >>>       platform-tools                          | 33.0.3  | Android SDK Platform-Tools     | platform-tools                                           subprocess.py:470
+           >>>       platforms;android-32                    | 1       | Android SDK Platform 32        | platforms\android-32                                     subprocess.py:470
+           >>>       system-images;android-31;default;x86_64 | 4       | Intel x86 Atom_64 System Image | system-images\android-31\default\x86_64                  subprocess.py:470
+           >>>                                                                                                                                                     subprocess.py:470
+           >>> Return code: 0                                                                                                                                      subprocess.py:479
+           >>> Android emulator is already installed.                                                                                                             android_sdk.py:423
+                                                                                                                                                                   subprocess.py:442
+           >>> Running Command:                                                                                                                                    subprocess.py:443
+           >>>     'C:\Users\cleme\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk\platform-tools\adb.exe' devices -l                                      subprocess.py:444
+           >>> Working Directory:                                                                                                                                  subprocess.py:451
+           >>>     C:\Users\cleme\PycharmProjects\beeware-tutorial\Dec                                                                                             subprocess.py:452
+           >>> Command Output:                                                                                                                                     subprocess.py:468
+           >>>     List of devices attached                                                                                                                        subprocess.py:470
+           >>>     M76LY5YH4DDU6HYL       unauthorized transport_id:1                                                                                              subprocess.py:470
+           >>>     emulator-5554          device product:sdk_phone64_x86_64 model:Android_SDK_built_for_x86_64 device:emulator64_x86_64 transport_id:3             subprocess.py:470
+           >>>                                                                                                                                                     subprocess.py:470
+           >>> Return code: 0                                                                                                                                      subprocess.py:479
+                                                                                                                                                                   subprocess.py:442
+           >>> Running Command:                                                                                                                                    subprocess.py:443
+           >>>     'C:\Users\cleme\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk\platform-tools\adb.exe' -s emulator-5554 emu avd name                   subprocess.py:444
+           >>> Working Directory:                                                                                                                                  subprocess.py:451
+           >>>     C:\Users\cleme\PycharmProjects\beeware-tutorial\Dec                                                                                             subprocess.py:452
+           >>> Command Output:                                                                                                                                     subprocess.py:468
+           >>>     emulator                                                                                                                                        subprocess.py:470
+           >>>                                                                                                                                                     subprocess.py:470
+           >>>     OK                                                                                                                                              subprocess.py:470
+           >>>                                                                                                                                                     subprocess.py:470
+           >>> Return code: 0                                                                                                                                      subprocess.py:479
+                                                                                                                                                                   subprocess.py:442
+           >>> Running Command:                                                                                                                                    subprocess.py:443
+           >>>     'C:\Users\cleme\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk\platform-tools\adb.exe' -s M76LY5YH4DDU6HYL emu avd name                subprocess.py:444
+           >>> Working Directory:                                                                                                                                  subprocess.py:451
+           >>>     C:\Users\cleme\PycharmProjects\beeware-tutorial\Dec                                                                                             subprocess.py:452
+           >>> Return code: 1                                                                                                                                      subprocess.py:479
+                                                                                                                                                                   subprocess.py:442
+           >>> Running Command:                                                                                                                                    subprocess.py:443
+           >>>     'C:\Users\cleme\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk\emulator\emulator.exe' -list-avds                                       subprocess.py:444
+           >>> Working Directory:                                                                                                                                  subprocess.py:451
+           >>>     C:\Users\cleme\PycharmProjects\beeware-tutorial\Dec                                                                                             subprocess.py:452
+           >>> Command Output:                                                                                                                                     subprocess.py:468
+           >>>     emulator                                                                                                                                        subprocess.py:470
+           >>> Return code: 0                                                                                                                                      subprocess.py:479
+                                                                                                                                                                  android_sdk.py:777
+           Select device:                                                                                                                                         android_sdk.py:778
+                                                                                                                                                                  android_sdk.py:779
+             1) @emulator (running emulator)                                                                                                                          console.py:493
+             2) Unknown device (not authorized for development) (M76LY5YH4DDU6HYL)                                                                                    console.py:493
+             3) Create a new Android emulator                                                                                                                         console.py:493
+                                                                                                                                                                      console.py:495
+[20:46:35] >                                                                                                                                                          console.py:498
+           >>> User input: 1                                                                                                                                          console.py:498
+                                                                                                                                                                  android_sdk.py:823
+           In future, you can specify this device by running:                                                                                                     android_sdk.py:823
+                                                                                                                                                                  android_sdk.py:823
+               $ briefcase run android -d @emulator                                                                                                               android_sdk.py:823
+                                                                                                                                                                       gradle.py:196
+           [Dec] Starting app on @emulator (running emulator) (device ID emulator-5554)                                                                                gradle.py:196
+                                                                                                                                                                       gradle.py:208
+           [Dec] Installing app...                                                                                                                                     gradle.py:208
+                                                                                                                                                                   subprocess.py:442
+           >>> Running Command:                                                                                                                                    subprocess.py:443
+           >>>     'C:\Users\cleme\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk\platform-tools\adb.exe' -s emulator-5554 shell am force-stop            subprocess.py:444
+           com.example.Dec                                                                                                                                                          
+           >>> Working Directory:                                                                                                                                  subprocess.py:451
+           >>>     C:\Users\cleme\PycharmProjects\beeware-tutorial\Dec                                                                                             subprocess.py:452
+           >>> Return code: 0                                                                                                                                      subprocess.py:479
+           Stopping old versions of the app... done                                                                                                                    gradle.py:209
+                                                                                                                                                                   subprocess.py:442
+           >>> Running Command:                                                                                                                                    subprocess.py:443
+           >>>     'C:\Users\cleme\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk\platform-tools\adb.exe' -s emulator-5554 install -r                     subprocess.py:444
+           'C:\Users\cleme\PycharmProjects\beeware-tutorial\Dec\android\gradle\DeckTracker\app\build\outputs\apk\debug\app-debug.apk'                                               
+           >>> Working Directory:                                                                                                                                  subprocess.py:451
+           >>>     C:\Users\cleme\PycharmProjects\beeware-tutorial\Dec                                                                                             subprocess.py:452
+[20:46:36] >>> Command Output:                                                                                                                                     subprocess.py:468
+           >>>     adb: failed to install                                                                                                                          subprocess.py:470
+           C:\Users\cleme\PycharmProjects\beeware-tutorial\Dec\android\gradle\DeckTracker\app\build\outputs\apk\debug\app-debug.apk: Failure                                        
+           [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]                                                                                          
+           >>>     Performing Streamed Install                                                                                                                     subprocess.py:470
+           >>> Return code: 1                                                                                                                                      subprocess.py:479
+           Installing new app version...                                                                                                                               gradle.py:213
+                                                                                                                                                                      __main__.py:22
+           Unable to install APK C:\Users\cleme\PycharmProjects\beeware-tutorial\Dec\android\gradle\DeckTracker\app\build\outputs\apk\debug\app-debug.apk on          __main__.py:23
+           emulator-5554                                                                                                                                                            
+
+┌─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────┐
+│ C:\Users\cleme\AppData\Local\Programs\Python\Python310\lib\site-packages\briefcase\integrations\android_sdk.py:1179 in install_apk                                               │
+│                                                                                                                                                                                  │
+│   1176 │   │   Returns `None` on success; raises an exception on failure.                                                                                                        │
+│   1177 │   │   """                                                                                                                                                               │
+│   1178 │   │   try:                                                                                                                                                              │
+│ > 1179 │   │   │   self.run("install", "-r", apk_path)                                                                                                                           │
+│   1180 │   │   except subprocess.CalledProcessError as e:                                                                                                                        │
+│   1181 │   │   │   raise BriefcaseCommandError(                                                                                                                                  │
+│   1182 │   │   │   │   f"Unable to install APK {apk_path} on {self.device}"                                                                                                      │
+│                                                                                                                                                                                  │
+│ ┌────────────────────────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────────────────────┐                           │
+│ │ apk_path = WindowsPath('C:/Users/cleme/PycharmProjects/beeware-tutorial/Dec/android/gradle/DeckTracker/app/build/outputs/apk/debug/app-debug.apk') │                           │
+│ │     self = <briefcase.integrations.android_sdk.ADB object at 0x000001E0DE4E51E0>                                                                   │                           │
+│ └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘                           │
+│                                                                                                                                                                                  │
+│ C:\Users\cleme\AppData\Local\Programs\Python\Python310\lib\site-packages\briefcase\integrations\android_sdk.py:1154 in run                                                       │
+│                                                                                                                                                                                  │
+│   1151 │   │   try:                                                                                                                                                              │
+│   1152 │   │   │   # Capture `stderr` so that if the process exits with failure, the                                                                                             │
+│   1153 │   │   │   # stderr data is in `e.output`.                                                                                                                               │
+│ > 1154 │   │   │   return self.command.subprocess.check_output(                                                                                                                  │
+│   1155 │   │   │   │   [                                                                                                                                                         │
+│   1156 │   │   │   │   │   os.fsdecode(self.android_sdk.adb_path),                                                                                                               │
+│   1157 │   │   │   │   │   "-s",                                                                                                                                                 │
+│                                                                                                                                                                                  │
+│ ┌──────────────────────────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────────────────────────┐       │
+│ │ arguments = ('install', '-r', WindowsPath('C:/Users/cleme/PycharmProjects/beeware-tutorial/Dec/android/gradle/DeckTracker/app/build/outputs/apk/debug/app-debug.apk')) │       │
+│ │      self = <briefcase.integrations.android_sdk.ADB object at 0x000001E0DE4E51E0>                                                                                      │       │
+│ └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘       │
+│                                                                                                                                                                                  │
+│ C:\Users\cleme\AppData\Local\Programs\Python\Python310\lib\site-packages\briefcase\integrations\subprocess.py:303 in check_output                                                │
+│                                                                                                                                                                                  │
+│   300 │   │   self._log_environment(kwargs.get("env"))                                                                                                                           │
+│   301 │   │                                                                                                                                                                      │
+│   302 │   │   try:                                                                                                                                                               │
+│ > 303 │   │   │   cmd_output = self._subprocess.check_output(                                                                                                                    │
+│   304 │   │   │   │   [str(arg) for arg in args], **self.final_kwargs(**kwargs)                                                                                                  │
+│   305 │   │   │   )                                                                                                                                                              │
+│   306 │   │   except subprocess.CalledProcessError as e:                                                                                                                         │
+│                                                                                                                                                                                  │
+│ ┌─────────────────────────────────────────────────── locals ────────────────────────────────────────────────────┐                                                                │
+│ │   args = [                                                                                                    │                                                                │
+│ │          │   'C:\\Users\\cleme\\AppData\\Local\\BeeWare\\briefcase\\Cache\\tools\\android_sdk\\platform-'+13, │                                                                │
+│ │          │   '-s',                                                                                            │                                                                │
+│ │          │   'emulator-5554',                                                                                 │                                                                │
+│ │          │   'install',                                                                                       │                                                                │
+│ │          │   '-r',                                                                                            │                                                                │
+│ │          │   'C:\\Users\\cleme\\PycharmProjects\\beeware-tutorial\\Dec\\android\\gradle\\DeckTracker\\a'+40   │                                                                │
+│ │          ]                                                                                                    │                                                                │
+│ │ kwargs = {'stderr': -2}                                                                                       │                                                                │
+│ │   self = <briefcase.integrations.subprocess.Subprocess object at 0x000001E0DE55D360>                          │                                                                │
+│ └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘                                                                │
+│                                                                                                                                                                                  │
+│ C:\Users\cleme\AppData\Local\Programs\Python\Python310\lib\subprocess.py:420 in check_output                                                                                     │
+│                                                                                                                                                                                  │
+│    417 │   │   │   empty = b''                                                                                                                                                   │
+│    418 │   │   kwargs['input'] = empty                                                                                                                                           │
+│    419 │                                                                                                                                                                         │
+│ >  420 │   return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,                                                                                                      │
+│    421 │   │   │      **kwargs).stdout                                                                                                                                           │
+│    422                                                                                                                                                                           │
+│    423                                                                                                                                                                           │
+│                                                                                                                                                                                  │
+│ ┌─────────────────────────────────────────────────────── locals ───────────────────────────────────────────────────────┐                                                         │
+│ │    kwargs = {'stderr': -2, 'text': True, 'encoding': 'cp850'}                                                        │                                                         │
+│ │ popenargs = (                                                                                                        │                                                         │
+│ │             │   [                                                                                                    │                                                         │
+│ │             │   │   'C:\\Users\\cleme\\AppData\\Local\\BeeWare\\briefcase\\Cache\\tools\\android_sdk\\platform-'+13, │                                                         │
+│ │             │   │   '-s',                                                                                            │                                                         │
+│ │             │   │   'emulator-5554',                                                                                 │                                                         │
+│ │             │   │   'install',                                                                                       │                                                         │
+│ │             │   │   '-r',                                                                                            │                                                         │
+│ │             │   │   'C:\\Users\\cleme\\PycharmProjects\\beeware-tutorial\\Dec\\android\\gradle\\DeckTracker\\a'+40   │                                                         │
+│ │             │   ],                                                                                                   │                                                         │
+│ │             )                                                                                                        │                                                         │
+│ │   timeout = None                                                                                                     │                                                         │
+│ └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘                                                         │
+│                                                                                                                                                                                  │
+│ C:\Users\cleme\AppData\Local\Programs\Python\Python310\lib\subprocess.py:524 in run                                                                                              │
+│                                                                                                                                                                                  │
+│    521 │   │   │   raise                                                                                                                                                         │
+│    522 │   │   retcode = process.poll()                                                                                                                                          │
+│    523 │   │   if check and retcode:                                                                                                                                             │
+│ >  524 │   │   │   raise CalledProcessError(retcode, process.args,                                                                                                               │
+│    525 │   │   │   │   │   │   │   │   │    output=stdout, stderr=stderr)                                                                                                        │
+│    526 │   return CompletedProcess(process.args, retcode, stdout, stderr)                                                                                                        │
+│    527                                                                                                                                                                           │
+│                                                                                                                                                                                  │
+│ ┌───────────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────────┐                                                    │
+│ │ capture_output = False                                                                                                    │                                                    │
+│ │          check = True                                                                                                     │                                                    │
+│ │          input = None                                                                                                     │                                                    │
+│ │         kwargs = {'stdout': -1, 'stderr': -2, 'text': True, 'encoding': 'cp850'}                                          │                                                    │
+│ │      popenargs = (                                                                                                        │                                                    │
+│ │                  │   [                                                                                                    │                                                    │
+│ │                  │   │   'C:\\Users\\cleme\\AppData\\Local\\BeeWare\\briefcase\\Cache\\tools\\android_sdk\\platform-'+13, │                                                    │
+│ │                  │   │   '-s',                                                                                            │                                                    │
+│ │                  │   │   'emulator-5554',                                                                                 │                                                    │
+│ │                  │   │   'install',                                                                                       │                                                    │
+│ │                  │   │   '-r',                                                                                            │                                                    │
+│ │                  │   │   'C:\\Users\\cleme\\PycharmProjects\\beeware-tutorial\\Dec\\android\\gradle\\DeckTracker\\a'+40   │                                                    │
+│ │                  │   ],                                                                                                   │                                                    │
+│ │                  )                                                                                                        │                                                    │
+│ │        process = <Popen: returncode: 1 args: ['C:\\Users\\cleme\\AppData\\Local\\BeeWare\\bri...>                         │                                                    │
+│ │        retcode = 1                                                                                                        │                                                    │
+│ │         stderr = None                                                                                                     │                                                    │
+│ │         stdout = 'adb: failed to install C:\\Users\\cleme\\PycharmProjects\\beeware-tutorial\\Dec\\andro'+181             │                                                    │
+│ │        timeout = None                                                                                                     │                                                    │
+│ └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘                                                    │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+CalledProcessError: Command '['C:\\Users\\cleme\\AppData\\Local\\BeeWare\\briefcase\\Cache\\tools\\android_sdk\\platform-tools\\adb.exe', '-s', 'emulator-5554', 'install', '-r', 'C:\\Users\\cleme\\PycharmProjects\\beeware-tutorial\\Dec\\android\\gradle\\DeckTracker\\app\\build\\outputs\\apk\\debug\\app-debug.apk']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+┌─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────┐
+│ C:\Users\cleme\AppData\Local\Programs\Python\Python310\lib\site-packages\briefcase\__main__.py:15 in main                                                                        │
+│                                                                                                                                                                                  │
+│   12 │   │   command, options = parse_cmdline(sys.argv[1:])                                                                                                                      │
+│   13 │   │   command.check_obsolete_data_dir()                                                                                                                                   │
+│   14 │   │   command.parse_config("pyproject.toml")                                                                                                                              │
+│ > 15 │   │   command(**options)                                                                                                                                                  │
+│   16 │   │   result = 0                                                                                                                                                          │
+│   17 │   except HelpText as e:                                                                                                                                                   │
+│   18 │   │   log.info()                                                                                                                                                          │
+│                                                                                                                                                                                  │
+│ ┌─────────────────────────────────────────────────────────────────────────────────── locals ───────────────────────────────────────────────────────────────────────────────────┐ │
+│ │ command = <briefcase.platforms.android.gradle.GradleRunCommand object at 0x000001E0DE44F370>                                                                                 │ │
+│ │       e = BriefcaseCommandError('Unable to install APK                                                                                                                       │ │
+│ │           C:\\Users\\cleme\\PycharmProjects\\beeware-tutorial\\Dec\\android\\gradle\\DeckTracker\\app\\build\\outputs\\apk\\debug\\app-debug.apk on emulator-5554')          │ │
+│ │     log = <briefcase.console.Log object at 0x000001E0DABC9870>                                                                                                               │ │
+│ │ options = {'appname': None, 'update': False, 'device_or_avd': None}                                                                                                          │ │
+│ │  result = 200                                                                                                                                                                │ │
+│ └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+│                                                                                                                                                                                  │
+│ C:\Users\cleme\AppData\Local\Programs\Python\Python310\lib\site-packages\briefcase\commands\run.py:66 in __call__                                                                │
+│                                                                                                                                                                                  │
+│   63 │   │   else:                                                                                                                                                               │
+│   64 │   │   │   state = None                                                                                                                                                    │
+│   65 │   │                                                                                                                                                                       │
+│ > 66 │   │   state = self.run_app(app, **full_options(state, options))                                                                                                           │
+│   67 │   │                                                                                                                                                                       │
+│   68 │   │   return state                                                                                                                                                        │
+│   69                                                                                                                                                                             │
+│                                                                                                                                                                                  │
+│ ┌──────────────────────────────────────────────────────────────────────── locals ─────────────────────────────────────────────────────────────────────────┐                      │
+│ │           app = <com.example.Dec v0.0.1 AppConfig>                                                                                                      │                      │
+│ │       appname = None                                                                                                                                    │                      │
+│ │   binary_file = WindowsPath('C:/Users/cleme/PycharmProjects/beeware-tutorial/Dec/android/gradle/DeckTracker/app/build/outputs/apk/debug/app-debug.apk') │                      │
+│ │       options = {'device_or_avd': None}                                                                                                                 │                      │
+│ │          self = <briefcase.platforms.android.gradle.GradleRunCommand object at 0x000001E0DE44F370>                                                      │                      │
+│ │         state = None                                                                                                                                    │                      │
+│ │ template_file = WindowsPath('C:/Users/cleme/PycharmProjects/beeware-tutorial/Dec/android/gradle/DeckTracker')                                           │                      │
+│ │        update = False                                                                                                                                   │                      │
+│ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘                      │
+│                                                                                                                                                                                  │
+│ C:\Users\cleme\AppData\Local\Programs\Python\Python310\lib\site-packages\briefcase\platforms\android\gradle.py:214 in run_app                                                    │
+│                                                                                                                                                                                  │
+│   211 │   │                                                                                                                                                                      │
+│   212 │   │   # Install the latest APK file onto the device.                                                                                                                     │
+│   213 │   │   with self.input.wait_bar("Installing new app version..."):                                                                                                         │
+│ > 214 │   │   │   adb.install_apk(self.binary_path(app))                                                                                                                         │
+│   215 │   │                                                                                                                                                                      │
+│   216 │   │   # To start the app, we launch `org.beeware.android.MainActivity`.                                                                                                  │
+│   217 │   │   with self.input.wait_bar("Launching app..."):                                                                                                                      │
+│                                                                                                                                                                                  │
+│ ┌────────────────────────────────────────────── locals ──────────────────────────────────────────────┐                                                                           │
+│ │           adb = <briefcase.integrations.android_sdk.ADB object at 0x000001E0DE4E51E0>              │                                                                           │
+│ │           app = <com.example.Dec v0.0.1 AppConfig>                                                 │                                                                           │
+│ │           avd = 'emulator'                                                                         │                                                                           │
+│ │        device = 'emulator-5554'                                                                    │                                                                           │
+│ │ device_or_avd = None                                                                               │                                                                           │
+│ │        kwargs = {}                                                                                 │                                                                           │
+│ │          name = '@emulator (running emulator)'                                                     │                                                                           │
+│ │       package = 'com.example.Dec'                                                                  │                                                                           │
+│ │          self = <briefcase.platforms.android.gradle.GradleRunCommand object at 0x000001E0DE44F370> │                                                                           │
+│ └────────────────────────────────────────────────────────────────────────────────────────────────────┘                                                                           │
+│                                                                                                                                                                                  │
+│ C:\Users\cleme\AppData\Local\Programs\Python\Python310\lib\site-packages\briefcase\integrations\android_sdk.py:1181 in install_apk                                               │
+│                                                                                                                                                                                  │
+│   1178 │   │   try:                                                                                                                                                              │
+│   1179 │   │   │   self.run("install", "-r", apk_path)                                                                                                                           │
+│   1180 │   │   except subprocess.CalledProcessError as e:                                                                                                                        │
+│ > 1181 │   │   │   raise BriefcaseCommandError(                                                                                                                                  │
+│   1182 │   │   │   │   f"Unable to install APK {apk_path} on {self.device}"                                                                                                      │
+│   1183 │   │   │   ) from e                                                                                                                                                      │
+│   1184                                                                                                                                                                           │
+│                                                                                                                                                                                  │
+│ ┌────────────────────────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────────────────────┐                           │
+│ │ apk_path = WindowsPath('C:/Users/cleme/PycharmProjects/beeware-tutorial/Dec/android/gradle/DeckTracker/app/build/outputs/apk/debug/app-debug.apk') │                           │
+│ │     self = <briefcase.integrations.android_sdk.ADB object at 0x000001E0DE4E51E0>                                                                   │                           │
+│ └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘                           │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+BriefcaseCommandError: Unable to install APK C:\Users\cleme\PycharmProjects\beeware-tutorial\Dec\android\gradle\DeckTracker\app\build\outputs\apk\debug\app-debug.apk on emulator-5554

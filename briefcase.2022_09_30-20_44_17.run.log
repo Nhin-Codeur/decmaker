@@ -1,0 +1,230 @@
+Date/Time:       2022-09-30 20:44:18 
+Command line:    C:\Users\cleme\AppData\Local\Programs\Python\Python310\Scripts\briefcase run android
+
+OS Release:      Windows 10
+OS Version:      10.0.19044
+Architecture:    AMD64
+Platform:        Windows-10-10.0.19044-SP0
+
+Python exe:      C:\Users\cleme\AppData\Local\Programs\Python\Python310\python.exe
+Python version:  3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)]
+Virtual env:     False
+Conda env:       False
+
+Briefcase:       0.3.9
+Target platform: android
+Target format:   gradle
+
+Environment Variables:
+    ALLUSERSPROFILE=C:\ProgramData
+    APPDATA=C:\Users\cleme\AppData\Roaming
+    COMMONPROGRAMFILES=C:\Program Files\Common Files
+    COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files
+    COMMONPROGRAMW6432=C:\Program Files\Common Files
+    COMPUTERNAME=DESKTOP-4RLDV1J
+    COMSPEC=C:\WINDOWS\system32\cmd.exe
+    DRIVERDATA=C:\Windows\System32\Drivers\DriverData
+    FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+    FPS_BROWSER_USER_PROFILE_STRING=Default
+    HOMEDRIVE=C:
+    HOMEPATH=\Users\cleme
+    LOCALAPPDATA=C:\Users\cleme\AppData\Local
+    LOGONSERVER=\\DESKTOP-4RLDV1J
+    NUMBER_OF_PROCESSORS=4
+    ONEDRIVE=C:\Users\cleme\OneDrive
+    ONEDRIVECONSUMER=C:\Users\cleme\OneDrive
+    OS=Windows_NT
+    PATH=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\cleme\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\cleme\AppData\Local\Programs\Python\Python310\;C:\Users\cleme\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.2.1\bin;
+    PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+    PROCESSOR_ARCHITECTURE=AMD64
+    PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+    PROCESSOR_LEVEL=6
+    PROCESSOR_REVISION=9e09
+    PROGRAMDATA=C:\ProgramData
+    PROGRAMFILES=C:\Program Files
+    PROGRAMFILES(X86)=C:\Program Files (x86)
+    PROGRAMW6432=C:\Program Files
+    PSMODULEPATH=C:\Users\cleme\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+    PUBLIC=C:\Users\Public
+    PYCHARM COMMUNITY EDITION=C:\Program Files\JetBrains\PyCharm Community Edition 2022.2.1\bin;
+    SESSIONNAME=Console
+    SYSTEMDRIVE=C:
+    SYSTEMROOT=C:\WINDOWS
+    TEMP=C:\Users\cleme\AppData\Local\Temp
+    TMP=C:\Users\cleme\AppData\Local\Temp
+    USERDOMAIN=DESKTOP-4RLDV1J
+    USERDOMAIN_ROAMINGPROFILE=DESKTOP-4RLDV1J
+    USERNAME=cleme
+    USERPROFILE=C:\Users\cleme
+    WINDIR=C:\WINDOWS
+    ZES_ENABLE_SYSMAN=1
+
+Briefcase Log:
+[20:44:08]                                                                                                                                                         subprocess.py:442
+           >>> Running Command:                                                                                                                                    subprocess.py:443
+           >>>     'C:\Users\cleme\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk\cmdline-tools\latest\bin\sdkmanager.bat' --list_installed               subprocess.py:444
+           >>> Working Directory:                                                                                                                                  subprocess.py:451
+           >>>     C:\Users\cleme\PycharmProjects\beeware-tutorial\Dec                                                                                             subprocess.py:452
+           >>> Environment Overrides:                                                                                                                              subprocess.py:461
+           >>>     ANDROID_SDK_ROOT=C:\Users\cleme\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk                                                         subprocess.py:463
+           >>>     JAVA_HOME=C:\Users\cleme\AppData\Local\BeeWare\briefcase\Cache\tools\java                                                                       subprocess.py:463
+[20:44:10] >>> Command Output:                                                                                                                                     subprocess.py:468
+           >>>     Loading package information...                                                                                                                  subprocess.py:470
+           >>>     Loading local repository...                                                                                                                     subprocess.py:470
+           >>>     [=========                              ] 25% Loading local repository...                                                                       subprocess.py:470
+           >>>     [=========                              ] 25% Fetch remote repository...                                                                        subprocess.py:470
+           >>>     [=======================================] 100% Fetch remote repository...                                                                       subprocess.py:470
+           >>>     Installed packages:                                                                                                                             subprocess.py:470
+           >>>       Path                                    | Version | Description                    | Location                                                 subprocess.py:470
+           >>>       -------                                 | ------- | -------                        | -------                                                  subprocess.py:470
+           >>>       build-tools;30.0.2                      | 30.0.2  | Android SDK Build-Tools 30.0.2 | build-tools\30.0.2                                       subprocess.py:470
+           >>>       emulator                                | 31.3.11 | Android Emulator               | emulator                                                 subprocess.py:470
+           >>>       patcher;v4                              | 1       | SDK Patch Applier v4           | patcher\v4                                               subprocess.py:470
+           >>>       platform-tools                          | 33.0.3  | Android SDK Platform-Tools     | platform-tools                                           subprocess.py:470
+           >>>       platforms;android-32                    | 1       | Android SDK Platform 32        | platforms\android-32                                     subprocess.py:470
+           >>>       system-images;android-31;default;x86_64 | 4       | Intel x86 Atom_64 System Image | system-images\android-31\default\x86_64                  subprocess.py:470
+           >>>                                                                                                                                                     subprocess.py:470
+           >>> Return code: 0                                                                                                                                      subprocess.py:479
+           >>> Android emulator is already installed.                                                                                                             android_sdk.py:423
+                                                                                                                                                                   subprocess.py:442
+           >>> Running Command:                                                                                                                                    subprocess.py:443
+           >>>     'C:\Users\cleme\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk\platform-tools\adb.exe' devices -l                                      subprocess.py:444
+           >>> Working Directory:                                                                                                                                  subprocess.py:451
+           >>>     C:\Users\cleme\PycharmProjects\beeware-tutorial\Dec                                                                                             subprocess.py:452
+[20:44:11] >>> Command Output:                                                                                                                                     subprocess.py:468
+           >>>     List of devices attached                                                                                                                        subprocess.py:470
+           >>>     M76LY5YH4DDU6HYL       unauthorized transport_id:1                                                                                              subprocess.py:470
+           >>>                                                                                                                                                     subprocess.py:470
+           >>> Return code: 0                                                                                                                                      subprocess.py:479
+                                                                                                                                                                   subprocess.py:442
+           >>> Running Command:                                                                                                                                    subprocess.py:443
+           >>>     'C:\Users\cleme\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk\platform-tools\adb.exe' -s M76LY5YH4DDU6HYL emu avd name                subprocess.py:444
+           >>> Working Directory:                                                                                                                                  subprocess.py:451
+           >>>     C:\Users\cleme\PycharmProjects\beeware-tutorial\Dec                                                                                             subprocess.py:452
+           >>> Return code: 1                                                                                                                                      subprocess.py:479
+                                                                                                                                                                   subprocess.py:442
+           >>> Running Command:                                                                                                                                    subprocess.py:443
+           >>>     'C:\Users\cleme\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk\emulator\emulator.exe' -list-avds                                       subprocess.py:444
+           >>> Working Directory:                                                                                                                                  subprocess.py:451
+           >>>     C:\Users\cleme\PycharmProjects\beeware-tutorial\Dec                                                                                             subprocess.py:452
+           >>> Command Output:                                                                                                                                     subprocess.py:468
+           >>>     emulator                                                                                                                                        subprocess.py:470
+           >>> Return code: 0                                                                                                                                      subprocess.py:479
+                                                                                                                                                                  android_sdk.py:777
+           Select device:                                                                                                                                         android_sdk.py:778
+                                                                                                                                                                  android_sdk.py:779
+             1) Unknown device (not authorized for development) (M76LY5YH4DDU6HYL)                                                                                    console.py:493
+             2) @emulator (emulator)                                                                                                                                  console.py:493
+             3) Create a new Android emulator                                                                                                                         console.py:493
+                                                                                                                                                                      console.py:495
+[20:44:17] >                                                                                                                                                          console.py:498
+           >>> User input: 1                                                                                                                                          console.py:498
+                                                                                                                                                                      __main__.py:22
+                                                                                                                                                                      __main__.py:23
+           The device you have selected (M76LY5YH4DDU6HYL) has not had developer options and                                                                          __main__.py:23
+           USB debugging enabled. These must be enabled before a device can be used  as a                                                                             __main__.py:23
+           target for deployment. For details on how to enable Developer Options, visit:                                                                              __main__.py:23
+                                                                                                                                                                      __main__.py:23
+               https://developer.android.com/studio/debug/dev-options#enable                                                                                          __main__.py:23
+                                                                                                                                                                      __main__.py:23
+           Once you have enabled these options on your device, you will be able to select                                                                             __main__.py:23
+           this device as a deployment target.                                                                                                                        __main__.py:23
+                                                                                                                                                                      __main__.py:23
+
+┌─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────┐
+│ C:\Users\cleme\AppData\Local\Programs\Python\Python310\lib\site-packages\briefcase\__main__.py:15 in main                                                                        │
+│                                                                                                                                                                                  │
+│   12 │   │   command, options = parse_cmdline(sys.argv[1:])                                                                                                                      │
+│   13 │   │   command.check_obsolete_data_dir()                                                                                                                                   │
+│   14 │   │   command.parse_config("pyproject.toml")                                                                                                                              │
+│ > 15 │   │   command(**options)                                                                                                                                                  │
+│   16 │   │   result = 0                                                                                                                                                          │
+│   17 │   except HelpText as e:                                                                                                                                                   │
+│   18 │   │   log.info()                                                                                                                                                          │
+│                                                                                                                                                                                  │
+│ ┌─────────────────────────────────────────── locals ───────────────────────────────────────────┐                                                                                 │
+│ │ command = <briefcase.platforms.android.gradle.GradleRunCommand object at 0x000001F54C4BF340> │                                                                                 │
+│ │       e = AndroidDeviceNotAuthorized('M76LY5YH4DDU6HYL')                                     │                                                                                 │
+│ │     log = <briefcase.console.Log object at 0x000001F548BD9870>                               │                                                                                 │
+│ │ options = {'appname': None, 'update': False, 'device_or_avd': None}                          │                                                                                 │
+│ │  result = 200                                                                                │                                                                                 │
+│ └──────────────────────────────────────────────────────────────────────────────────────────────┘                                                                                 │
+│                                                                                                                                                                                  │
+│ C:\Users\cleme\AppData\Local\Programs\Python\Python310\lib\site-packages\briefcase\commands\run.py:66 in __call__                                                                │
+│                                                                                                                                                                                  │
+│   63 │   │   else:                                                                                                                                                               │
+│   64 │   │   │   state = None                                                                                                                                                    │
+│   65 │   │                                                                                                                                                                       │
+│ > 66 │   │   state = self.run_app(app, **full_options(state, options))                                                                                                           │
+│   67 │   │                                                                                                                                                                       │
+│   68 │   │   return state                                                                                                                                                        │
+│   69                                                                                                                                                                             │
+│                                                                                                                                                                                  │
+│ ┌──────────────────────────────────────────────────────────────────────── locals ─────────────────────────────────────────────────────────────────────────┐                      │
+│ │           app = <com.example.Dec v0.0.1 AppConfig>                                                                                                      │                      │
+│ │       appname = None                                                                                                                                    │                      │
+│ │   binary_file = WindowsPath('C:/Users/cleme/PycharmProjects/beeware-tutorial/Dec/android/gradle/DeckTracker/app/build/outputs/apk/debug/app-debug.apk') │                      │
+│ │       options = {'device_or_avd': None}                                                                                                                 │                      │
+│ │          self = <briefcase.platforms.android.gradle.GradleRunCommand object at 0x000001F54C4BF340>                                                      │                      │
+│ │         state = None                                                                                                                                    │                      │
+│ │ template_file = WindowsPath('C:/Users/cleme/PycharmProjects/beeware-tutorial/Dec/android/gradle/DeckTracker')                                           │                      │
+│ │        update = False                                                                                                                                   │                      │
+│ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘                      │
+│                                                                                                                                                                                  │
+│ C:\Users\cleme\AppData\Local\Programs\Python\Python310\lib\site-packages\briefcase\platforms\android\gradle.py:176 in run_app                                                    │
+│                                                                                                                                                                                  │
+│   173 │   │   :param device: The device to target. If ``None``, the user will                                                                                                    │
+│   174 │   │   │   be asked to re-run the command selecting a specific device.                                                                                                    │
+│   175 │   │   """                                                                                                                                                                │
+│ > 176 │   │   device, name, avd = self.android_sdk.select_target_device(                                                                                                         │
+│   177 │   │   │   device_or_avd=device_or_avd                                                                                                                                    │
+│   178 │   │   )                                                                                                                                                                  │
+│   179                                                                                                                                                                            │
+│                                                                                                                                                                                  │
+│ ┌────────────────────────────────────────────── locals ──────────────────────────────────────────────┐                                                                           │
+│ │           app = <com.example.Dec v0.0.1 AppConfig>                                                 │                                                                           │
+│ │ device_or_avd = None                                                                               │                                                                           │
+│ │        kwargs = {}                                                                                 │                                                                           │
+│ │          self = <briefcase.platforms.android.gradle.GradleRunCommand object at 0x000001F54C4BF340> │                                                                           │
+│ └────────────────────────────────────────────────────────────────────────────────────────────────────┘                                                                           │
+│                                                                                                                                                                                  │
+│ C:\Users\cleme\AppData\Local\Programs\Python\Python310\lib\site-packages\briefcase\integrations\android_sdk.py:813 in select_target_device                                       │
+│                                                                                                                                                                                  │
+│    810 │   │   │   │   details = running_devices[choice]                                                                                                                         │
+│    811 │   │   │   │   if not details["authorized"]:                                                                                                                             │
+│    812 │   │   │   │   │   # An unauthorized physical device                                                                                                                     │
+│ >  813 │   │   │   │   │   raise AndroidDeviceNotAuthorized(choice)                                                                                                              │
+│    814 │   │   │   │                                                                                                                                                             │
+│    815 │   │   │   │   # Return the device ID and name.                                                                                                                          │
+│    816 │   │   │   │   device = choice                                                                                                                                           │
+│                                                                                                                                                                                  │
+│ ┌───────────────────────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────────────────────┐                            │
+│ │             avd = 'emulator'                                                                                                                      │                            │
+│ │          choice = 'M76LY5YH4DDU6HYL'                                                                                                              │                            │
+│ │         choices = [                                                                                                                               │                            │
+│ │                   │   ('M76LY5YH4DDU6HYL', 'Unknown device (not authorized for development) (M76LY5YH4DDU6HYL)'),                                 │                            │
+│ │                   │   ('@emulator', '@emulator (emulator)'),                                                                                      │                            │
+│ │                   │   (None, 'Create a new Android emulator')                                                                                     │                            │
+│ │                   ]                                                                                                                               │                            │
+│ │               d = 'M76LY5YH4DDU6HYL'                                                                                                              │                            │
+│ │         details = {'name': 'Unknown device (not authorized for development)', 'authorized': False}                                                │                            │
+│ │  device_choices = {'M76LY5YH4DDU6HYL': 'Unknown device (not authorized for development) (M76LY5YH4DDU6HYL)', '@emulator': '@emulator (emulator)'} │                            │
+│ │   device_or_avd = None                                                                                                                            │                            │
+│ │       full_name = 'Unknown device (not authorized for development) (M76LY5YH4DDU6HYL)'                                                            │                            │
+│ │            name = '@emulator (emulator)'                                                                                                          │                            │
+│ │    running_avds = {}                                                                                                                              │                            │
+│ │ running_devices = {'M76LY5YH4DDU6HYL': {'name': 'Unknown device (not authorized for development)', 'authorized': False}}                          │                            │
+│ │            self = <briefcase.integrations.android_sdk.AndroidSDK object at 0x000001F54C5CE560>                                                    │                            │
+│ └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘                            │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+AndroidDeviceNotAuthorized: 
+The device you have selected (M76LY5YH4DDU6HYL) has not had developer options and
+USB debugging enabled. These must be enabled before a device can be used  as a
+target for deployment. For details on how to enable Developer Options, visit:
+
+    https://developer.android.com/studio/debug/dev-options#enable
+
+Once you have enabled these options on your device, you will be able to select
+this device as a deployment target.
+
+
