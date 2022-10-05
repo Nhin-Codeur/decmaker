@@ -1,7 +1,12 @@
+from io import BytesIO
+
 import toga
 from toga.style.pack import *
 import requests
 import json
+from toga.constants import TRANSPARENT
+from PIL import Image, ImageFont, ImageDraw
+
 
 
 deck = []
@@ -37,18 +42,31 @@ def build(app):
    name_input = toga.TextInput()
    salute_label = toga.Label("", style=Pack(text_align=LEFT))
 
+
+   def create_img_with_text(clicked_carte):
+      response = requests.get(clicked_carte['cropImage'])
+      img = Image.open(BytesIO(response.content))
+      d1 = ImageDraw.Draw(img)
+
+      font = ImageFont.truetype("commando.ttf", 22)
+      d1.text((5, 20), clicked_carte['name'], fill='white', font=font)
+      buffer = BytesIO()
+      img.save(buffer, format='png', compress_level=0)
+
+      image_from_bytes = toga.Image(data=buffer.getvalue())
+      return toga.ImageView(id='crop_image', image=image_from_bytes)
+
+
+
    def image_handler(widget):
       clicked_carte = get_requested_cards()[int(widget.id)]
-      crop_image = toga.Image(clicked_carte['cropImage'])
-      view_crop_image = toga.ImageView(id='crop_image', image=crop_image)
-
-      nom_crop_carte = toga.Label(clicked_carte['name'])
+      result_view = create_img_with_text(clicked_carte)
 
 
       deck_and_name_box = toga.Box()
-      deck_and_name_box.style.update(width = 200, height=100, direction=COLUMN)
-      deck_and_name_box.add(view_crop_image, nom_crop_carte)
-
+      deck_and_name_box.style.update(width=300, height=30, direction=COLUMN)
+      
+      deck_and_name_box.add(result_view)
       deck_box.add(deck_and_name_box)
 
 
