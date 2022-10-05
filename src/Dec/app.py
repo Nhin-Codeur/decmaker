@@ -43,7 +43,7 @@ def build(app):
       view_crop_image = toga.ImageView(id='crop_image', image=crop_image)
 
       nom_crop_carte = toga.Label(clicked_carte['name'])
-      nom_crop_carte.style.update(padding_top=-60, background_color='transparent')
+
 
       deck_and_name_box = toga.Box()
       deck_and_name_box.style.update(width = 200, height=100, direction=COLUMN)
