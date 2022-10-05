@@ -18,21 +18,44 @@ def get_requested_cards():
 
 def search_card(name):
    name = name.replace(' ','%20')
-   response = requests.get('https://us.api.blizzard.com/hearthstone/cards?locale=en_US&access_token=EUk1x8qqMHqMox6x3uNVb0hjiPiKOvwKAV&textFilter=' + name)
+   response = requests.get('https://us.api.blizzard.com/hearthstone/cards?locale=en_US&access_token=EUIF2G9N5gGcTVYLVhPwDsbecgKIdgAu57&textFilter=' + name)
    dict = json.loads(response.text)
    if len(dict['cards']) == 0:
       return -1
    else:
       return dict['cards']
 
-def image_handler(widget):
-   print(widget.id)
-   print(get_requested_cards()[int(widget.id)]['name'])
+
 def build(app):
-   box = toga.Box()
-   name_label = toga.Label('Name:', style=Pack(text_align=LEFT))
+   parent_box=toga.Box()
+   search_box=toga.Box()
+   deck_box=toga.Box()
+   parent_box.add(search_box, deck_box)
+   parent_box.style.update(direction=ROW)
+
+
    name_input = toga.TextInput()
    salute_label = toga.Label("", style=Pack(text_align=LEFT))
+
+   def image_handler(widget):
+      clicked_carte = get_requested_cards()[int(widget.id)]
+      crop_image = toga.Image(clicked_carte['cropImage'])
+      view_crop_image = toga.ImageView(id='crop_image', image=crop_image)
+
+      nom_crop_carte = toga.Label(clicked_carte['name'])
+      nom_crop_carte.style.update(padding_top=-60, background_color='transparent')
+
+      deck_and_name_box = toga.Box()
+      deck_and_name_box.style.update(width = 200, height=100, direction=COLUMN)
+      deck_and_name_box.add(view_crop_image, nom_crop_carte)
+
+      deck_box.add(deck_and_name_box)
+
+
+
+
+
+
 
    def create_visualisation_cartes(my_image, index):
       image_et_boutton = toga.Box()
@@ -40,7 +63,7 @@ def build(app):
       view = toga.ImageView(id='viewcarte', image=my_image)
       view.style.update(width=200)
       button = toga.Button('Add card', on_press=image_handler, id=str(index))
-      image_et_boutton.add(view, button)
+      button.style.update(padding_top = -200, width = 20, padding_left = 100)
       image_et_boutton.add(view, button)
       conteneur_image.add(image_et_boutton)
 
@@ -73,38 +96,27 @@ def build(app):
 
    button.style.padding = 20
    button.style.flex = 1
-   name_label.style.update(width=100, padding_left=10)
+
    name_input.style.update(width=100, padding_top=10, padding_left=10)
 
    salute_label.style.update(width=100, padding_top=10, padding_left=10)
 
 
 
-   box.add(name_label)
-   box.add(name_input)
-   box.add(salute_label)
-   box.add(button)
+
+   search_box.add(name_input)
+   search_box.add(salute_label)
+   search_box.add(button)
 
    conteneur_image = toga.Box()
    conteneur_image.style.update(direction=ROW, padding=10, alignment='center', width=1000, height=400)
-   box.add(conteneur_image)
+   search_box.add(conteneur_image)
+   search_box.style.update(direction=COLUMN, width=500, height=1000, padding_top=10)
 
-
-
-   box.style.update(direction=COLUMN, width=1000, height=1000, padding_top=10)
-
-
-
-
-
-   return box
-
-
-
+   return parent_box
 
 def main():
    return toga.App('DeckMaker', "deck_maker", startup=build)
-
 
 if __name__ == '__main__':
    main().main_loop()
