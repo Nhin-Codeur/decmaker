@@ -22,8 +22,11 @@ def get_requested_cards():
    return requested_cards
 
 def search_card(name):
+
    name = name.replace(' ','%20')
-   response = requests.get('https://us.api.blizzard.com/hearthstone/cards?locale=en_US&access_token=EUIF2G9N5gGcTVYLVhPwDsbecgKIdgAu57&textFilter=' + name)
+   file = open("token.txt", "r")
+   token = file.read()
+   response = requests.get('https://us.api.blizzard.com/hearthstone/cards?locale=en_US&access_token=' + token + '&textFilter=' + name)
    dict = json.loads(response.text)
    if len(dict['cards']) == 0:
       return -1
@@ -35,6 +38,7 @@ def build(app):
    parent_box=toga.Box()
    search_box=toga.Box()
    deck_box=toga.Box()
+   deck_box.style.update(direction=COLUMN)
    parent_box.add(search_box, deck_box)
    parent_box.style.update(direction=ROW)
 
@@ -65,9 +69,11 @@ def build(app):
 
       deck_and_name_box = toga.Box()
       deck_and_name_box.style.update(width=300, height=30, direction=COLUMN)
-      
+
+
       deck_and_name_box.add(result_view)
       deck_box.add(deck_and_name_box)
+
 
 
 
@@ -86,6 +92,11 @@ def build(app):
       conteneur_image.add(image_et_boutton)
 
    def button_handler(widget):
+
+      conteneur_image = toga.Box
+      conteneur_image.style.update(direction=ROW, padding=10, alignment='center', width=1000, height=400)
+      search_box.add(conteneur_image)
+      search_box.style.update(direction=COLUMN, width=500, height=1000, padding_top=10)
       # salute_label.text = "Hello " + name_input.value
       set_requested_cards(search_card(name_input.value))
       if get_requested_cards() == -1:
@@ -93,7 +104,6 @@ def build(app):
       else:
          index = 0
          while index != len(get_requested_cards()):
-
             my_image = toga.Image(get_requested_cards()[index]['image'])
             create_visualisation_cartes(my_image, index)
             index += 1
